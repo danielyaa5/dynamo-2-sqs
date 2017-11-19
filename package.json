@@ -1,0 +1,42 @@
+{
+  "name": "dynamo-2-sqs",
+  "version": "1.0.1",
+  "description": "Scans a DynamoDB table and puts the items into SQS for processing",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielyaa5/dynamo-2-sqs.git"
+  },
+  "keywords": [
+    "DynamoDB",
+    "SQS",
+    "Node",
+    "Node.js",
+    "Nodejs",
+    "JavaScript",
+    "AWS",
+    "aws-sdk",
+    "stream",
+    "streams"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielyaa5/dynamo-2-sqs/issues"
+  },
+  "homepage": "https://github.com/danielyaa5/dynamo-2-sqs#readme",
+  "dependencies": {
+    "aws-sdk": "^2.153.0",
+    "dynamo-streams": "^1.2.2",
+    "joi": "^13.0.2",
+    "lodash": "^4.17.4",
+    "mississippi2": "^1.0.4",
+    "sqs-write-stream": "^1.0.0"
+  }
+}
