@@ -1,6 +1,6 @@
 {
   "name": "dynamo-2-sqs",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Scans a DynamoDB table and puts the items into SQS for processing",
   "main": "src/index.js",
   "directories": {
