@@ -10,6 +10,7 @@ Note: This is not built for every use case so if you need it to fit with your pa
 Requires Node 8.0 or greater
 
 ## Simple Usage
+Second argument is an object with must contain EITHER url or name key. Which correspond to the QueueUrl and QueueName.
 ```
 const dynamo2Sqs = require('dynamo-2-sqs');
 
@@ -20,7 +21,7 @@ const MessageGroupId = 'quax1';
 const dynamoConfig = { region: 'us-east-2' };
 const options = { dynamo: { config: dynamoConfig }, sqs: { config: sqsConfig, MessageGroupId } };
 
-const start = () => dynamo2Sqs(tableName, queueUrl, options);
+const start = () => dynamo2Sqs(tableName, { url: queueUrl }, options);
 ```
 ## Advanced Usage
 **Warning: Not tested**
@@ -32,5 +33,5 @@ const exampleTransformStream = new stream.Transform();
 
 options.pipeInject =(dynamoScanReadStream, sqsWriteStream) => [dynamoScanReadStream, exampleTransformStream, sqsWriteStream]
 
-const start = () => dynamo2Sqs(tableName, queueUrl, options);
+const start = () => dynamo2Sqs(tableName, { url: queueUrl }, options);
 ```

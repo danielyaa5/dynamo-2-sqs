@@ -32,11 +32,11 @@
   },
   "homepage": "https://github.com/danielyaa5/dynamo-2-sqs#readme",
   "dependencies": {
-    "aws-sdk": "^2.153.0",
+    "aws-sdk": "^2.156.0",
     "dynamo-streams": "^1.2.2",
     "joi": "^13.0.2",
     "lodash": "^4.17.4",
     "mississippi2": "^1.0.4",
-    "sqs-write-stream": "^1.0.0"
+    "sqs-write-stream": "^1.0.2"
   }
 }
