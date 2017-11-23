@@ -37,6 +37,6 @@
     "joi": "^13.0.2",
     "lodash": "^4.17.4",
     "mississippi2": "^1.0.4",
-    "sqs-write-stream": "^1.0.2"
+    "sqs-write-stream": "^1.1.0"
   }
 }
